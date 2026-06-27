@@ -7,7 +7,7 @@ const {
 register,
 login
 
-}=require("../controllers/authController")
+}=require('../controllers/authcontroller')
 
 router.post("/register",register)
 
