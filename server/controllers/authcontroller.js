@@ -1,5 +1,4 @@
-const User=require("../models/User")
-
+const User=require('../models/user')
 const register=async(req,res)=>{
 
 const {name,email,password}=req.body
