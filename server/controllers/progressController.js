@@ -1,4 +1,4 @@
-const Progress = require('../models/progress')
+ const Progress = require('../models/progress')
 const addProgress = async (req, res) => {
 
   try {
