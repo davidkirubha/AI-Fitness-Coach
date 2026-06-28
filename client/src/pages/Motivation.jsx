@@ -13,7 +13,7 @@ function Motivation() {
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/ai/ask",
+        `${import.meta.env.VITE_API_URL}/api/ai/ask`,
 
         {
           question: "motivation"
@@ -41,7 +41,7 @@ function Motivation() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/motivation"
+        `${import.meta.env.VITE_API_URL}/api/motivation`
 
       )
 
@@ -93,7 +93,7 @@ function Motivation() {
 
       await axios.post(
 
-        "http://localhost:5000/api/motivation/save",
+        `${import.meta.env.VITE_API_URL}/api/motivation/save`,
 
         {
 
@@ -123,7 +123,7 @@ function Motivation() {
 
       await axios.delete(
 
-        `http://localhost:5000/api/motivation/${id}`
+        `${import.meta.env.VITE_API_URL}/api/motivation/${id}`
 
       )
 
@@ -145,7 +145,7 @@ function Motivation() {
 
       await axios.delete(
 
-        "http://localhost:5000/api/motivation/clear"
+        `${import.meta.env.VITE_API_URL}/api/motivation/clear`
 
       )
 

@@ -14,7 +14,7 @@ function WorkoutTracker() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/progress"
+        `${import.meta.env.VITE_API_URL}/api/progress`
       )
 
       setHistory(res.data)
@@ -121,7 +121,7 @@ function WorkoutTracker() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/progress",
+        `${import.meta.env.VITE_API_URL}/api/progress`,
         {
           exercise,
           targetReps,
@@ -152,7 +152,7 @@ function WorkoutTracker() {
     try {
 
       await axios.delete(
-        "http://localhost:5000/api/progress/clear"
+        `${import.meta.env.VITE_API_URL}/api/progress/clear`
       )
 
       setHistory([])

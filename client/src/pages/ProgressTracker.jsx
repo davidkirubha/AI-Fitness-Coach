@@ -15,7 +15,7 @@ function ProgressTracker() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/progress"
+        `${import.meta.env.VITE_API_URL}/api/progress`
       )
 
       setHistory(res.data)
@@ -39,7 +39,7 @@ function ProgressTracker() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/progress",
+        `${import.meta.env.VITE_API_URL}/api/progress`,
         {
           exercise,
           targetReps,

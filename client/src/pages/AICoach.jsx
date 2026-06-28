@@ -14,7 +14,7 @@ const result=
 
 await axios.post(
 
-"http://localhost:5000/api/ai/ask",
+`${import.meta.env.VITE_API_URL}/api/ai/ask`,
 
 {
 
