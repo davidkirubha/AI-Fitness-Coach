@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-import Workout from "./Workout"
-import Meal from "./Meal"
-import Progress from "./Progress"
+import Workout from "./workout";
+import Meal from "./meal";
+import Progress from "./progress";
 import AICoach from "./AICoach"
 import WorkoutTracker from "./WorkoutTracker"
 import Motivation from "./Motivation"
